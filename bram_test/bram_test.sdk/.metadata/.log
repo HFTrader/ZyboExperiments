@@ -1,0 +1,1347 @@
+!SESSION 2017-09-29 14:50:09.683 -----------------------------------------------
+eclipse.buildId=2017.2
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data M:/Work/Vivado/zcu102/bram_test/bram_test.sdk
+
+This is a continuation of log file M:\Work\Vivado\zcu102\bram_test\bram_test.sdk\.metadata\.bak_0.log
+Created Time: 2017-09-29 23:17:07.187
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.187
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.196
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A3C388]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.196
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388" && level==1}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.221
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388" && level==1}], Result: [null,      2  xczu9 (idcode 14738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.222
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.235
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A3C388]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.235
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388" && level==1}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.279
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388" && level==1}], Result: [null,      2  xczu9 (idcode 14738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.280
+!MESSAGE XSCT Command: [version -server], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.282
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2017.2.1]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.282
+!MESSAGE XSCT Command: [version], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.283
+!MESSAGE XSCT command with result: [version], Result: [null, 2017.2.1]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.284
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.297
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A3C388]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.298
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388" && level==1}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.335
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388" && level==1}], Result: [null,      2  xczu9 (idcode 14738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.335
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2NC 210308A3C388" && level == 0}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.370
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2NC 210308A3C388" && level == 0}], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.371
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.372
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.372
+!MESSAGE XSCT Command: [source M:/XilinxWin/SDK/2017.2/scripts/sdk/util/zynqmp_utils.tcl], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.374
+!MESSAGE XSCT command with result: [source M:/XilinxWin/SDK/2017.2/scripts/sdk/util/zynqmp_utils.tcl], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.374
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388"} -index 1], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.434
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388"} -index 1], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.435
+!MESSAGE XSCT Command: [loadhw -hw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.804
+!MESSAGE XSCT command with result: [loadhw -hw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]], Result: [null, design_1_wrapper_2]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.805
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.807
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.807
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388"} -index 1], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.857
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388"} -index 1], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.857
+!MESSAGE XSCT Command: [source M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.872
+!MESSAGE XSCT command with result: [source M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:07.873
+!MESSAGE XSCT Command: [psu_init], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:09.353
+!MESSAGE XSCT command with result: [psu_init], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:09.354
+!MESSAGE XSCT Command: [after 1000], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:10.355
+!MESSAGE XSCT command with result: [after 1000], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:10.356
+!MESSAGE XSCT Command: [psu_ps_pl_isolation_removal], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:10.366
+!MESSAGE XSCT command with result: [psu_ps_pl_isolation_removal], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:10.367
+!MESSAGE XSCT Command: [after 1000], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:11.367
+!MESSAGE XSCT command with result: [after 1000], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:11.368
+!MESSAGE XSCT Command: [psu_ps_pl_reset_config], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:11.392
+!MESSAGE XSCT command with result: [psu_ps_pl_reset_config], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:11.393
+!MESSAGE XSCT Command: [catch {psu_protection}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:11.434
+!MESSAGE XSCT command with result: [catch {psu_protection}], Result: [null, 0]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:11.435
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388"} -index 1], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:11.496
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388"} -index 1], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:11.497
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:11.569
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:11.570
+!MESSAGE XSCT Command: [dow M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello/Debug/hello.elf], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:11.881
+!MESSAGE XSCT command with result: [dow M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello/Debug/hello.elf], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:11.881
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:11.887
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:11.962
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388"} -index 1], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:12.015
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388"} -index 1], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:12.016
+!MESSAGE XSCT Command: [con], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:17:12.059
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:56.513
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-642
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:56.524
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-642
+
+!ENTRY com.xilinx.sdk.utils 1 0 2017-09-29 23:18:57.513
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.515
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.524
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#4]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.524
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.553
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A3C388]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.553
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.567
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A3C388]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.567
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388" && level==1}], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.597
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388" && level==1}], Result: [null,      2  xczu9 (idcode 14738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.598
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.605
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A3C388]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.605
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388" && level==1}], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.626
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388" && level==1}], Result: [null,      2  xczu9 (idcode 14738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.627
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss ], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.631
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss ], Result: [null, ]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.631
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.635
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "6.3",
+}]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.636
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.675
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Result: [null, {"psu_cortexa53_0": {"archiver": {"category": "",
+"value": "aarch64-none-elf-ar",
+"default": "aarch64-none-elf-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "aarch64-none-elf-gcc",
+"default": "aarch64-none-elf-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"exec_mode": {"category": "",
+"value": "aarch64",
+"default": "aarch64",
+"type": "enum",
+"desc": "Execution mode of the processor - aarch32 vs aarch64",
+"permit": "",
+"options": {"AARCH32": "aarch32",
+"AARCH64": "aarch64",
+},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-g -Wall -Wextra",
+"default": "-g -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "",
+},
+"stdin": {"category": "",
+"value": "psu_uart_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "psu_coresight_0 psu_uart_0 psu_uart_1",
+},
+"stdout": {"category": "",
+"value": "psu_uart_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "psu_coresight_0 psu_uart_0 psu_uart_1",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.676
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.682
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A3C388]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.683
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388" && level==1}], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.701
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388" && level==1}], Result: [null,      2  xczu9 (idcode 14738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.701
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.707
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A3C388]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.708
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388" && level==1}], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.725
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388" && level==1}], Result: [null,      2  xczu9 (idcode 14738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.725
+!MESSAGE XSCT Command: [version -server], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.726
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2017.2.1]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.727
+!MESSAGE XSCT Command: [version], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.727
+!MESSAGE XSCT command with result: [version], Result: [null, 2017.2.1]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.728
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.740
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A3C388]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.740
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388" && level==1}], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.759
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388" && level==1}], Result: [null,      2  xczu9 (idcode 14738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.759
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2NC 210308A3C388" && level == 0}], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.800
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2NC 210308A3C388" && level == 0}], Result: [null, ]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.801
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.802
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.802
+!MESSAGE XSCT Command: [source M:/XilinxWin/SDK/2017.2/scripts/sdk/util/zynqmp_utils.tcl], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.804
+!MESSAGE XSCT command with result: [source M:/XilinxWin/SDK/2017.2/scripts/sdk/util/zynqmp_utils.tcl], Result: [null, ]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.805
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388"} -index 1], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.879
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388"} -index 1], Result: [null, ]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.879
+!MESSAGE XSCT Command: [loadhw -hw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.912
+!MESSAGE XSCT command with result: [loadhw -hw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]], Result: [null, design_1_wrapper_2]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.913
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.915
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.915
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388"} -index 1], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.973
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388"} -index 1], Result: [null, ]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.973
+!MESSAGE XSCT Command: [source M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.987
+!MESSAGE XSCT command with result: [source M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl], Result: [null, ]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:57.987
+!MESSAGE XSCT Command: [psu_init], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:59.841
+!MESSAGE XSCT command with result: [psu_init], Result: [null, ]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:18:59.842
+!MESSAGE XSCT Command: [after 1000], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:19:00.843
+!MESSAGE XSCT command with result: [after 1000], Result: [null, ]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:19:00.844
+!MESSAGE XSCT Command: [psu_ps_pl_isolation_removal], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:19:00.855
+!MESSAGE XSCT command with result: [psu_ps_pl_isolation_removal], Result: [null, ]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:19:00.856
+!MESSAGE XSCT Command: [after 1000], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:19:01.857
+!MESSAGE XSCT command with result: [after 1000], Result: [null, ]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:19:01.858
+!MESSAGE XSCT Command: [psu_ps_pl_reset_config], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:19:01.879
+!MESSAGE XSCT command with result: [psu_ps_pl_reset_config], Result: [null, ]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:19:01.880
+!MESSAGE XSCT Command: [catch {psu_protection}], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:19:01.924
+!MESSAGE XSCT command with result: [catch {psu_protection}], Result: [null, 0]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:19:01.925
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388"} -index 1], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:19:01.988
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388"} -index 1], Result: [null, ]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:19:01.989
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:19:02.065
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:19:02.066
+!MESSAGE XSCT Command: [dow M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello/Debug/hello.elf], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:19:02.416
+!MESSAGE XSCT command with result: [dow M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello/Debug/hello.elf], Result: [null, ]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:19:02.416
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:19:02.418
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:19:02.475
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388"} -index 1], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:19:02.519
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A3C388"} -index 1], Result: [null, ]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:19:02.520
+!MESSAGE XSCT Command: [con], Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:19:02.563
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:26.826
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:26.829
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:26.829
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:26.832
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "6.3",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:26.832
+!MESSAGE XSCT Command: [::hsi::utils::closesw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:26.833
+!MESSAGE XSCT command with result: [::hsi::utils::closesw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:30.904
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:30.909
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:30.909
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:30.913
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "6.3",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:30.913
+!MESSAGE XSCT Command: [::hsi::utils::closesw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:30.915
+!MESSAGE XSCT command with result: [::hsi::utils::closesw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.068
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.078
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.078
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.083
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "6.3",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.085
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.088
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.088
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.091
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.091
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.123
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Result: [null, {"axi_bram_ctrl_0": {"name": "bram",
+"ver": "4.1",
+},
+"axi_bram_ctrl_1": {"name": "bram",
+"ver": "4.1",
+},
+"psu_acpu_gic": {"name": "scugic",
+"ver": "3.7",
+},
+"psu_adma_0": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_adma_1": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_adma_2": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_adma_3": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_adma_4": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_adma_5": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_adma_6": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_adma_7": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_afi_0": {"name": "generic",
+"ver": "2.0",
+},
+"psu_afi_1": {"name": "generic",
+"ver": "2.0",
+},
+"psu_afi_2": {"name": "generic",
+"ver": "2.0",
+},
+"psu_afi_3": {"name": "generic",
+"ver": "2.0",
+},
+"psu_afi_4": {"name": "generic",
+"ver": "2.0",
+},
+"psu_afi_5": {"name": "generic",
+"ver": "2.0",
+},
+"psu_afi_6": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ams": {"name": "sysmonpsu",
+"ver": "2.2",
+},
+"psu_apm_0": {"name": "axipmon",
+"ver": "6.5",
+},
+"psu_apm_1": {"name": "axipmon",
+"ver": "6.5",
+},
+"psu_apm_2": {"name": "axipmon",
+"ver": "6.5",
+},
+"psu_apm_5": {"name": "axipmon",
+"ver": "6.5",
+},
+"psu_apu": {"name": "generic",
+"ver": "2.0",
+},
+"psu_can_1": {"name": "canps",
+"ver": "3.2",
+},
+"psu_cci_gpv": {"name": "generic",
+"ver": "2.0",
+},
+"psu_cci_reg": {"name": "generic",
+"ver": "2.0",
+},
+"psu_coresight_0": {"name": "coresightps_dcc",
+"ver": "1.4",
+},
+"psu_crf_apb": {"name": "generic",
+"ver": "2.0",
+},
+"psu_crl_apb": {"name": "generic",
+"ver": "2.0",
+},
+"psu_csudma": {"name": "csudma",
+"ver": "1.1",
+},
+"psu_ctrl_ipi": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ddr_0": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ddr_1": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ddr_phy": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ddr_qos_ctrl": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ddr_xmpu0_cfg": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ddr_xmpu1_cfg": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ddr_xmpu2_cfg": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ddr_xmpu3_cfg": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ddr_xmpu4_cfg": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ddr_xmpu5_cfg": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ddrc_0": {"name": "ddrcpsu",
+"ver": "1.1",
+},
+"psu_dp": {"name": "generic",
+"ver": "2.0",
+},
+"psu_dpdma": {"name": "generic",
+"ver": "2.0",
+},
+"psu_efuse": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ethernet_3": {"name": "emacps",
+"ver": "3.4",
+},
+"psu_fpd_gpv": {"name": "generic",
+"ver": "2.0",
+},
+"psu_fpd_slcr": {"name": "generic",
+"ver": "2.0",
+},
+"psu_fpd_slcr_secure": {"name": "generic",
+"ver": "2.0",
+},
+"psu_fpd_xmpu_cfg": {"name": "generic",
+"ver": "2.0",
+},
+"psu_fpd_xmpu_sink": {"name": "generic",
+"ver": "2.0",
+},
+"psu_gdma_0": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_gdma_1": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_gdma_2": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_gdma_3": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_gdma_4": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_gdma_5": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_gdma_6": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_gdma_7": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_gpio_0": {"name": "gpiops",
+"ver": "3.3",
+},
+"psu_gpu": {"name": "generic",
+"ver": "2.0",
+},
+"psu_i2c_0": {"name": "iicps",
+"ver": "3.5",
+},
+"psu_i2c_1": {"name": "iicps",
+"ver": "3.5",
+},
+"psu_iou_scntr": {"name": "generic",
+"ver": "2.0",
+},
+"psu_iou_scntrs": {"name": "generic",
+"ver": "2.0",
+},
+"psu_iousecure_slcr": {"name": "generic",
+"ver": "2.0",
+},
+"psu_iouslcr_0": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ipi_0": {"name": "ipipsu",
+"ver": "2.3",
+},
+"psu_lpd_slcr": {"name": "generic",
+"ver": "2.0",
+},
+"psu_lpd_slcr_secure": {"name": "generic",
+"ver": "2.0",
+},
+"psu_lpd_xppu": {"name": "generic",
+"ver": "2.0",
+},
+"psu_lpd_xppu_sink": {"name": "generic",
+"ver": "2.0",
+},
+"psu_mbistjtag": {"name": "generic",
+"ver": "2.0",
+},
+"psu_message_buffers": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ocm": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ocm_ram_0": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ocm_xmpu_cfg": {"name": "generic",
+"ver": "2.0",
+},
+"psu_pcie": {"name": "generic",
+"ver": "2.0",
+},
+"psu_pcie_attrib_0": {"name": "generic",
+"ver": "2.0",
+},
+"psu_pcie_dma": {"name": "generic",
+"ver": "2.0",
+},
+"psu_pcie_high1": {"name": "generic",
+"ver": "2.0",
+},
+"psu_pcie_high2": {"name": "generic",
+"ver": "2.0",
+},
+"psu_pcie_low": {"name": "generic",
+"ver": "2.0",
+},
+"psu_pmu_global_0": {"name": "generic",
+"ver": "2.0",
+},
+"psu_qspi_0": {"name": "qspipsu",
+"ver": "1.4",
+},
+"psu_qspi_linear_0": {"name": "generic",
+"ver": "2.0",
+},
+"psu_r5_0_atcm_global": {"name": "generic",
+"ver": "2.0",
+},
+"psu_r5_0_btcm_global": {"name": "generic",
+"ver": "2.0",
+},
+"psu_r5_1_atcm_global": {"name": "generic",
+"ver": "2.0",
+},
+"psu_r5_1_btcm_global": {"name": "generic",
+"ver": "2.0",
+},
+"psu_r5_tcm_ram_global": {"name": "generic",
+"ver": "2.0",
+},
+"psu_rcpu_gic": {"name": "scugic",
+"ver": "3.7",
+},
+"psu_rpu": {"name": "generic",
+"ver": "2.0",
+},
+"psu_rsa": {"name": "generic",
+"ver": "2.0",
+},
+"psu_rtc": {"name": "rtcpsu",
+"ver": "1.4",
+},
+"psu_sata": {"name": "generic",
+"ver": "2.0",
+},
+"psu_sd_1": {"name": "sdps",
+"ver": "3.2",
+},
+"psu_serdes": {"name": "generic",
+"ver": "2.0",
+},
+"psu_siou": {"name": "generic",
+"ver": "2.0",
+},
+"psu_smmu_gpv": {"name": "generic",
+"ver": "2.0",
+},
+"psu_smmu_reg": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ttc_0": {"name": "ttcps",
+"ver": "3.3",
+},
+"psu_ttc_1": {"name": "ttcps",
+"ver": "3.3",
+},
+"psu_ttc_2": {"name": "ttcps",
+"ver": "3.3",
+},
+"psu_ttc_3": {"name": "ttcps",
+"ver": "3.3",
+},
+"psu_uart_0": {"name": "uartps",
+"ver": "3.4",
+},
+"psu_uart_1": {"name": "uartps",
+"ver": "3.4",
+},
+"psu_usb_0": {"name": "generic",
+"ver": "2.0",
+},
+"psu_usb_xhci_0": {"name": "usbpsu",
+"ver": "1.2",
+},
+"psu_wdt_0": {"name": "wdtps",
+"ver": "3.0",
+},
+"psu_wdt_1": {"name": "wdtps",
+"ver": "3.0",
+},
+"psu_cortexa53_0": {"name": "cpu_cortexa53",
+"ver": "1.3",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.131
+!MESSAGE XSCT Command: [::hsi::utils::closesw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.132
+!MESSAGE XSCT command with result: [::hsi::utils::closesw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.138
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.142
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.143
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.144
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "6.3",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.145
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.146
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.147
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.150
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.150
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.182
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/design_1_wrapper_hw_platform_0/system.hdf M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Result: [null, {"axi_bram_ctrl_0": {"name": "bram",
+"ver": "4.1",
+},
+"axi_bram_ctrl_1": {"name": "bram",
+"ver": "4.1",
+},
+"psu_acpu_gic": {"name": "scugic",
+"ver": "3.7",
+},
+"psu_adma_0": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_adma_1": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_adma_2": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_adma_3": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_adma_4": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_adma_5": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_adma_6": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_adma_7": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_afi_0": {"name": "generic",
+"ver": "2.0",
+},
+"psu_afi_1": {"name": "generic",
+"ver": "2.0",
+},
+"psu_afi_2": {"name": "generic",
+"ver": "2.0",
+},
+"psu_afi_3": {"name": "generic",
+"ver": "2.0",
+},
+"psu_afi_4": {"name": "generic",
+"ver": "2.0",
+},
+"psu_afi_5": {"name": "generic",
+"ver": "2.0",
+},
+"psu_afi_6": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ams": {"name": "sysmonpsu",
+"ver": "2.2",
+},
+"psu_apm_0": {"name": "axipmon",
+"ver": "6.5",
+},
+"psu_apm_1": {"name": "axipmon",
+"ver": "6.5",
+},
+"psu_apm_2": {"name": "axipmon",
+"ver": "6.5",
+},
+"psu_apm_5": {"name": "axipmon",
+"ver": "6.5",
+},
+"psu_apu": {"name": "generic",
+"ver": "2.0",
+},
+"psu_can_1": {"name": "canps",
+"ver": "3.2",
+},
+"psu_cci_gpv": {"name": "generic",
+"ver": "2.0",
+},
+"psu_cci_reg": {"name": "generic",
+"ver": "2.0",
+},
+"psu_coresight_0": {"name": "coresightps_dcc",
+"ver": "1.4",
+},
+"psu_crf_apb": {"name": "generic",
+"ver": "2.0",
+},
+"psu_crl_apb": {"name": "generic",
+"ver": "2.0",
+},
+"psu_csudma": {"name": "csudma",
+"ver": "1.1",
+},
+"psu_ctrl_ipi": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ddr_0": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ddr_1": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ddr_phy": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ddr_qos_ctrl": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ddr_xmpu0_cfg": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ddr_xmpu1_cfg": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ddr_xmpu2_cfg": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ddr_xmpu3_cfg": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ddr_xmpu4_cfg": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ddr_xmpu5_cfg": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ddrc_0": {"name": "ddrcpsu",
+"ver": "1.1",
+},
+"psu_dp": {"name": "generic",
+"ver": "2.0",
+},
+"psu_dpdma": {"name": "generic",
+"ver": "2.0",
+},
+"psu_efuse": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ethernet_3": {"name": "emacps",
+"ver": "3.4",
+},
+"psu_fpd_gpv": {"name": "generic",
+"ver": "2.0",
+},
+"psu_fpd_slcr": {"name": "generic",
+"ver": "2.0",
+},
+"psu_fpd_slcr_secure": {"name": "generic",
+"ver": "2.0",
+},
+"psu_fpd_xmpu_cfg": {"name": "generic",
+"ver": "2.0",
+},
+"psu_fpd_xmpu_sink": {"name": "generic",
+"ver": "2.0",
+},
+"psu_gdma_0": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_gdma_1": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_gdma_2": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_gdma_3": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_gdma_4": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_gdma_5": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_gdma_6": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_gdma_7": {"name": "zdma",
+"ver": "1.2",
+},
+"psu_gpio_0": {"name": "gpiops",
+"ver": "3.3",
+},
+"psu_gpu": {"name": "generic",
+"ver": "2.0",
+},
+"psu_i2c_0": {"name": "iicps",
+"ver": "3.5",
+},
+"psu_i2c_1": {"name": "iicps",
+"ver": "3.5",
+},
+"psu_iou_scntr": {"name": "generic",
+"ver": "2.0",
+},
+"psu_iou_scntrs": {"name": "generic",
+"ver": "2.0",
+},
+"psu_iousecure_slcr": {"name": "generic",
+"ver": "2.0",
+},
+"psu_iouslcr_0": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ipi_0": {"name": "ipipsu",
+"ver": "2.3",
+},
+"psu_lpd_slcr": {"name": "generic",
+"ver": "2.0",
+},
+"psu_lpd_slcr_secure": {"name": "generic",
+"ver": "2.0",
+},
+"psu_lpd_xppu": {"name": "generic",
+"ver": "2.0",
+},
+"psu_lpd_xppu_sink": {"name": "generic",
+"ver": "2.0",
+},
+"psu_mbistjtag": {"name": "generic",
+"ver": "2.0",
+},
+"psu_message_buffers": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ocm": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ocm_ram_0": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ocm_xmpu_cfg": {"name": "generic",
+"ver": "2.0",
+},
+"psu_pcie": {"name": "generic",
+"ver": "2.0",
+},
+"psu_pcie_attrib_0": {"name": "generic",
+"ver": "2.0",
+},
+"psu_pcie_dma": {"name": "generic",
+"ver": "2.0",
+},
+"psu_pcie_high1": {"name": "generic",
+"ver": "2.0",
+},
+"psu_pcie_high2": {"name": "generic",
+"ver": "2.0",
+},
+"psu_pcie_low": {"name": "generic",
+"ver": "2.0",
+},
+"psu_pmu_global_0": {"name": "generic",
+"ver": "2.0",
+},
+"psu_qspi_0": {"name": "qspipsu",
+"ver": "1.4",
+},
+"psu_qspi_linear_0": {"name": "generic",
+"ver": "2.0",
+},
+"psu_r5_0_atcm_global": {"name": "generic",
+"ver": "2.0",
+},
+"psu_r5_0_btcm_global": {"name": "generic",
+"ver": "2.0",
+},
+"psu_r5_1_atcm_global": {"name": "generic",
+"ver": "2.0",
+},
+"psu_r5_1_btcm_global": {"name": "generic",
+"ver": "2.0",
+},
+"psu_r5_tcm_ram_global": {"name": "generic",
+"ver": "2.0",
+},
+"psu_rcpu_gic": {"name": "scugic",
+"ver": "3.7",
+},
+"psu_rpu": {"name": "generic",
+"ver": "2.0",
+},
+"psu_rsa": {"name": "generic",
+"ver": "2.0",
+},
+"psu_rtc": {"name": "rtcpsu",
+"ver": "1.4",
+},
+"psu_sata": {"name": "generic",
+"ver": "2.0",
+},
+"psu_sd_1": {"name": "sdps",
+"ver": "3.2",
+},
+"psu_serdes": {"name": "generic",
+"ver": "2.0",
+},
+"psu_siou": {"name": "generic",
+"ver": "2.0",
+},
+"psu_smmu_gpv": {"name": "generic",
+"ver": "2.0",
+},
+"psu_smmu_reg": {"name": "generic",
+"ver": "2.0",
+},
+"psu_ttc_0": {"name": "ttcps",
+"ver": "3.3",
+},
+"psu_ttc_1": {"name": "ttcps",
+"ver": "3.3",
+},
+"psu_ttc_2": {"name": "ttcps",
+"ver": "3.3",
+},
+"psu_ttc_3": {"name": "ttcps",
+"ver": "3.3",
+},
+"psu_uart_0": {"name": "uartps",
+"ver": "3.4",
+},
+"psu_uart_1": {"name": "uartps",
+"ver": "3.4",
+},
+"psu_usb_0": {"name": "generic",
+"ver": "2.0",
+},
+"psu_usb_xhci_0": {"name": "usbpsu",
+"ver": "1.2",
+},
+"psu_wdt_0": {"name": "wdtps",
+"ver": "3.0",
+},
+"psu_wdt_1": {"name": "wdtps",
+"ver": "3.0",
+},
+"psu_cortexa53_0": {"name": "cpu_cortexa53",
+"ver": "1.3",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.185
+!MESSAGE XSCT Command: [::hsi::utils::closesw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:34.187
+!MESSAGE XSCT command with result: [::hsi::utils::closesw M:/Work/Vivado/zcu102/bram_test/bram_test.sdk/hello_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2017-09-29 23:31:47.888
+!MESSAGE Executed Webtalk command
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:47.904
+!MESSAGE XSCT Command: [disconnect tcfchan#4], Thread: Thread-714
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-09-29 23:31:47.911
+!MESSAGE XSCT command with result: [disconnect tcfchan#4], Result: [null, ]. Thread: Thread-714

@@ -1,0 +1,64 @@
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include <xscugic.h>
+#include "xtop.h"
+#include <stdint.h>
+
+
+XScuGic intcontrol;
+XTop xtop;
+uint32_t values[1024];
+
+
+void InterruptHandler(void *data, u8 TmrCtrNumber)
+{
+	xil_printf(" Interrupt acknowledged \n \r ");
+}
+
+int main()
+{
+    init_platform();
+
+    XTop_Initialize(&xtop,0);
+    XTop_Set_values(&xtop, (u32)values );
+    XTop_InterruptGlobalEnable(&xtop);
+
+    XScuGic_Config *GicConfig;
+    GicConfig = XScuGic_LookupConfig(XPAR_PS7_SCUGIC_0_DEVICE_ID);
+    if (NULL == GicConfig) {
+    	return XST_FAILURE;
+    }
+    int Status = XScuGic_CfgInitialize(&intcontrol, GicConfig, GicConfig->CpuBaseAddress);
+    if (Status != XST_SUCCESS) {
+    	return XST_FAILURE;
+    }
+
+    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+    		(Xil_ExceptionHandler) XScuGic_InterruptHandler,
+			&intcontrol);
+    Xil_ExceptionEnable();
+
+
+    Status = XScuGic_Connect(&intcontrol,
+    XPAR_FABRIC_AXI_TIMER_0_INTERRUPT_INTR,
+    (Xil_ExceptionHandler)XTmrCtr_InterruptHandler,
+    (void *)TimerInstancePtr);
+    if (Status != XST_SUCCESS) {
+    return XST_FAILURE;
+    }
+    /*
+    * Enable the interrupt for the device and then cause (simulate) an
+    * interrupt so the handlers will be called
+    */
+    XScuGic_Enable(&InterruptController, XPAR_FABRIC_AXI_TIMER_0_INTERRUPT_INTR);
+    return XST_SUCCESS;
+
+
+
+    print("Hello World\n\r");
+
+    cleanup_platform();
+    return 0;
+}

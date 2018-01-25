@@ -1,0 +1,70 @@
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include <xscugic.h>
+#include "xtop.h"
+#include <stdint.h>
+
+
+XScuGic intcontrol;
+XTop xtop;
+uint32_t values[1024];
+
+
+void InterruptHandler(void *data )
+{
+	xil_printf(" Interrupt acknowledged \n \r ");
+	//Get list of enabled interrupts
+	int enabled_list = XTop_InterruptGetEnabled(&xtop);
+	//Get interrupt status list
+	int status_list = XTop_InterruptGetStatus(&xtop);
+	//Check ap_done created the interrupt
+	if((enabled_list & 1) && (status_list & 1)){
+		//Clear the ap_done interrupt
+		XTop_InterruptClear(&xtop,1);
+	}
+}
+
+int main()
+{
+    init_platform();
+
+    XScuGic_Config *GicConfig;
+    GicConfig = XScuGic_LookupConfig(XPAR_PS7_SCUGIC_0_DEVICE_ID);
+    if (NULL == GicConfig) {
+    	return XST_FAILURE;
+    }
+    int Status = XScuGic_CfgInitialize(&intcontrol, GicConfig, GicConfig->CpuBaseAddress);
+    if (Status != XST_SUCCESS) {
+    	return XST_FAILURE;
+    }
+
+    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+    		(Xil_ExceptionHandler) XScuGic_InterruptHandler,
+			&intcontrol);
+    Xil_ExceptionEnable();
+
+
+    Status = XScuGic_Connect(&intcontrol,
+    		XPAR_FABRIC_TOP_0_INTERRUPT_INTR,
+			(Xil_ExceptionHandler)InterruptHandler,
+			(void *)&xtop );
+    if (Status != XST_SUCCESS) {
+    	return XST_FAILURE;
+    }
+    XScuGic_Enable(&intcontrol, XPAR_FABRIC_TOP_0_INTERRUPT_INTR);
+
+    XTop_Initialize(&xtop,0);
+    XTop_InterruptGlobalEnable(&xtop);
+    XTop_InterruptEnable( &xtop, 0 );
+
+    print("Hello World\n\r");
+    XTop_Set_values(&xtop, (u32)values );
+    XTop_Start(&xtop);
+    while ( XTop_IsDone(&xtop)==0 );
+    print("Finished\n\r");
+
+    cleanup_platform();
+    return 0;
+}

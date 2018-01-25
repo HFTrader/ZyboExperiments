@@ -1,0 +1,1428 @@
+06:38:33 INFO  : Registering command handlers for SDK TCF services
+06:38:37 INFO  : Launching XSCT server: xsct -n -interactive /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/temp_xsdb_launch_script.tcl
+06:38:39 INFO  : XSCT server has started successfully.
+06:38:40 INFO  : Successfully done setting XSCT server connection channel  
+06:38:40 INFO  : Successfully done setting SDK workspace  
+06:38:40 INFO  : Processing command line option -hwspec /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper.hdf.
+06:47:24 INFO  : Launching XSCT server: xsct -n -interactive /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/temp_xsdb_launch_script.tcl
+06:47:27 INFO  : XSCT server has started successfully.
+06:47:31 INFO  : Successfully done setting XSCT server connection channel  
+06:47:31 INFO  : Successfully done setting SDK workspace  
+06:47:35 INFO  : Registering command handlers for SDK TCF services
+06:47:37 INFO  : Processing command line option -hwspec /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper.hdf.
+06:47:38 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+08:25:09 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1516626232000,  Project:1516624217000
+08:25:09 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+08:25:18 INFO  : Copied contents of /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+08:25:22 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+08:25:24 INFO  : 
+08:25:25 INFO  : Updating hardware inferred compiler options for hello.
+08:25:25 INFO  : Clearing existing target manager status.
+08:25:25 WARN  : Given IPC port value is invalid. Using default port 2350
+08:25:25 WARN  : Given XMD timeout value is invalid. Using default value of 50000
+08:25:29 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+08:25:29 INFO  : Closing and re-opening the MSS file of ther project hello_bsp
+08:25:30 INFO  : Closing and re-opening the MSS file of ther project hello_bsp
+08:25:30 INFO  : Closing and re-opening the MSS file of ther project hello_bsp
+08:25:30 INFO  : Closing and re-opening the MSS file of ther project hello_bsp
+08:25:30 INFO  : Closing and re-opening the MSS file of ther project hello_bsp
+08:25:31 INFO  : Closing and re-opening the MSS file of ther project hello_bsp
+08:25:31 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+08:25:32 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+08:26:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+08:26:31 INFO  : 'fpga -state' command is executed.
+08:26:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:26:31 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+08:26:31 INFO  : 'jtag frequency' command is executed.
+08:26:31 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+08:26:31 INFO  : Context for 'APU' is selected.
+08:26:31 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+08:26:31 INFO  : 'configparams force-mem-access 1' command is executed.
+08:26:31 INFO  : Context for 'APU' is selected.
+08:26:31 INFO  : 'stop' command is executed.
+08:26:32 INFO  : 'ps7_init' command is executed.
+08:26:32 INFO  : 'ps7_post_config' command is executed.
+08:26:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:26:32 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+08:26:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:26:32 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+08:26:32 INFO  : 'configparams force-mem-access 0' command is executed.
+08:26:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+08:26:32 INFO  : Memory regions updated for context APU
+08:26:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:26:32 INFO  : 'con' command is executed.
+08:26:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+08:26:32 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_hello.elf_on_local.tcl'
+08:29:08 INFO  : Disconnected from the channel tcfchan#1.
+08:29:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+08:29:09 INFO  : 'fpga -state' command is executed.
+08:29:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:29:10 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+08:29:10 INFO  : 'jtag frequency' command is executed.
+08:29:10 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+08:29:10 INFO  : Context for 'APU' is selected.
+08:29:12 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+08:29:12 INFO  : 'configparams force-mem-access 1' command is executed.
+08:29:12 INFO  : Context for 'APU' is selected.
+08:29:12 INFO  : 'stop' command is executed.
+08:29:13 INFO  : 'ps7_init' command is executed.
+08:29:13 INFO  : 'ps7_post_config' command is executed.
+08:29:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:29:14 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+08:29:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:29:14 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+08:29:14 INFO  : 'configparams force-mem-access 0' command is executed.
+08:29:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+08:29:14 INFO  : Memory regions updated for context APU
+08:29:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:29:14 INFO  : 'con' command is executed.
+08:29:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+08:29:14 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_hello.elf_on_local.tcl'
+08:32:02 INFO  : Disconnected from the channel tcfchan#2.
+08:32:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+08:32:03 INFO  : 'fpga -state' command is executed.
+08:32:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:32:03 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+08:32:03 INFO  : 'jtag frequency' command is executed.
+08:32:03 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+08:32:04 INFO  : Context for 'APU' is selected.
+08:32:04 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+08:32:04 INFO  : 'configparams force-mem-access 1' command is executed.
+08:32:04 INFO  : Context for 'APU' is selected.
+08:32:04 INFO  : 'stop' command is executed.
+08:32:05 INFO  : 'ps7_init' command is executed.
+08:32:05 INFO  : 'ps7_post_config' command is executed.
+08:32:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:32:05 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+08:32:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:32:05 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+08:32:05 INFO  : 'configparams force-mem-access 0' command is executed.
+08:32:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+08:32:05 INFO  : Memory regions updated for context APU
+08:32:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:32:05 INFO  : 'con' command is executed.
+08:32:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+08:32:05 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_hello.elf_on_local.tcl'
+08:46:55 INFO  : Disconnected from the channel tcfchan#3.
+08:46:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+08:46:56 INFO  : 'fpga -state' command is executed.
+08:46:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:46:56 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+08:46:56 INFO  : 'jtag frequency' command is executed.
+08:46:56 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+08:46:56 INFO  : Context for 'APU' is selected.
+08:46:56 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+08:46:56 INFO  : 'configparams force-mem-access 1' command is executed.
+08:46:56 INFO  : Context for 'APU' is selected.
+08:46:56 INFO  : 'stop' command is executed.
+08:46:57 INFO  : 'ps7_init' command is executed.
+08:46:57 INFO  : 'ps7_post_config' command is executed.
+08:46:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:46:57 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+08:46:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:46:58 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+08:46:58 INFO  : 'configparams force-mem-access 0' command is executed.
+08:46:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+08:46:58 INFO  : Memory regions updated for context APU
+08:46:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:46:58 INFO  : 'con' command is executed.
+08:46:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+08:46:58 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_hello.elf_on_local.tcl'
+08:56:42 INFO  : Disconnected from the channel tcfchan#4.
+08:56:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+08:56:43 INFO  : 'fpga -state' command is executed.
+08:56:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:56:44 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+08:56:44 INFO  : 'jtag frequency' command is executed.
+08:56:44 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+08:56:44 INFO  : Context for 'APU' is selected.
+08:56:44 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+08:56:44 INFO  : 'configparams force-mem-access 1' command is executed.
+08:56:44 INFO  : Context for 'APU' is selected.
+08:56:44 INFO  : 'stop' command is executed.
+08:56:45 INFO  : 'ps7_init' command is executed.
+08:56:45 INFO  : 'ps7_post_config' command is executed.
+08:56:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:56:45 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+08:56:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:56:45 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+08:56:45 INFO  : 'configparams force-mem-access 0' command is executed.
+08:56:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+08:56:45 INFO  : Memory regions updated for context APU
+08:56:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:56:45 INFO  : 'con' command is executed.
+08:56:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+08:56:45 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_hello.elf_on_local.tcl'
+08:57:29 INFO  : Disconnected from the channel tcfchan#5.
+08:57:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+08:57:30 INFO  : 'fpga -state' command is executed.
+08:57:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:57:30 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+08:57:30 INFO  : 'jtag frequency' command is executed.
+08:57:30 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+08:57:30 INFO  : Context for 'APU' is selected.
+08:57:30 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+08:57:30 INFO  : 'configparams force-mem-access 1' command is executed.
+08:57:30 INFO  : Context for 'APU' is selected.
+08:57:30 INFO  : 'stop' command is executed.
+08:57:31 INFO  : 'ps7_init' command is executed.
+08:57:31 INFO  : 'ps7_post_config' command is executed.
+08:57:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:57:31 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+08:57:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:57:31 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+08:57:31 INFO  : 'configparams force-mem-access 0' command is executed.
+08:57:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+08:57:31 INFO  : Memory regions updated for context APU
+08:57:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:57:32 INFO  : 'con' command is executed.
+08:57:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+08:57:32 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_hello.elf_on_local.tcl'
+08:57:53 INFO  : Disconnected from the channel tcfchan#6.
+08:57:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+08:57:54 INFO  : 'fpga -state' command is executed.
+08:57:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:57:54 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+08:57:54 INFO  : 'jtag frequency' command is executed.
+08:57:54 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+08:57:54 INFO  : Context for 'APU' is selected.
+08:57:54 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+08:57:54 INFO  : 'configparams force-mem-access 1' command is executed.
+08:57:54 INFO  : Context for 'APU' is selected.
+08:57:54 INFO  : 'stop' command is executed.
+08:57:55 INFO  : 'ps7_init' command is executed.
+08:57:55 INFO  : 'ps7_post_config' command is executed.
+08:57:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:57:55 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+08:57:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:57:56 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+08:57:56 INFO  : 'configparams force-mem-access 0' command is executed.
+08:57:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+08:57:56 INFO  : Memory regions updated for context APU
+08:57:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:57:56 INFO  : 'con' command is executed.
+08:57:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+08:57:56 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_hello.elf_on_local.tcl'
+08:58:25 INFO  : Disconnected from the channel tcfchan#7.
+08:58:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+08:58:27 INFO  : 'fpga -state' command is executed.
+08:58:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:58:27 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+08:58:27 INFO  : 'jtag frequency' command is executed.
+08:58:27 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+08:58:27 INFO  : Context for 'APU' is selected.
+08:58:27 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+08:58:27 INFO  : 'configparams force-mem-access 1' command is executed.
+08:58:27 INFO  : Context for 'APU' is selected.
+08:58:27 INFO  : 'stop' command is executed.
+08:58:28 INFO  : 'ps7_init' command is executed.
+08:58:28 INFO  : 'ps7_post_config' command is executed.
+08:58:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:58:28 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+08:58:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:58:28 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+08:58:28 INFO  : 'configparams force-mem-access 0' command is executed.
+08:58:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+08:58:28 INFO  : Memory regions updated for context APU
+08:58:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:58:29 INFO  : 'con' command is executed.
+08:58:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+08:58:29 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_hello.elf_on_local.tcl'
+08:59:05 INFO  : Disconnected from the channel tcfchan#8.
+08:59:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+08:59:06 INFO  : 'fpga -state' command is executed.
+08:59:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:59:07 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+08:59:07 INFO  : 'jtag frequency' command is executed.
+08:59:07 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+08:59:07 INFO  : Context for 'APU' is selected.
+08:59:07 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+08:59:07 INFO  : 'configparams force-mem-access 1' command is executed.
+08:59:07 INFO  : Context for 'APU' is selected.
+08:59:07 INFO  : 'stop' command is executed.
+08:59:08 INFO  : 'ps7_init' command is executed.
+08:59:08 INFO  : 'ps7_post_config' command is executed.
+08:59:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:59:08 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+08:59:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:59:08 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+08:59:08 INFO  : 'configparams force-mem-access 0' command is executed.
+08:59:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+08:59:08 INFO  : Memory regions updated for context APU
+08:59:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:59:08 INFO  : 'con' command is executed.
+08:59:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+08:59:08 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_hello.elf_on_local.tcl'
+09:01:01 INFO  : Disconnected from the channel tcfchan#9.
+09:01:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+09:01:03 INFO  : 'fpga -state' command is executed.
+09:01:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:01:03 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+09:01:03 INFO  : 'jtag frequency' command is executed.
+09:01:03 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:01:03 INFO  : Context for 'APU' is selected.
+09:01:03 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+09:01:03 INFO  : 'configparams force-mem-access 1' command is executed.
+09:01:03 INFO  : Context for 'APU' is selected.
+09:01:03 INFO  : 'stop' command is executed.
+09:01:04 INFO  : 'ps7_init' command is executed.
+09:01:04 INFO  : 'ps7_post_config' command is executed.
+09:01:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:01:04 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:01:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:01:04 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:01:04 INFO  : 'configparams force-mem-access 0' command is executed.
+09:01:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:01:04 INFO  : Memory regions updated for context APU
+09:01:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:01:04 INFO  : 'con' command is executed.
+09:01:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+09:01:04 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_hello.elf_on_local.tcl'
+09:01:17 INFO  : Disconnected from the channel tcfchan#10.
+09:01:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+09:01:18 INFO  : 'fpga -state' command is executed.
+09:01:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:01:19 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+09:01:19 INFO  : 'jtag frequency' command is executed.
+09:01:19 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:01:19 INFO  : Context for 'APU' is selected.
+09:01:19 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+09:01:19 INFO  : 'configparams force-mem-access 1' command is executed.
+09:01:19 INFO  : Context for 'APU' is selected.
+09:01:19 INFO  : 'stop' command is executed.
+09:01:20 INFO  : 'ps7_init' command is executed.
+09:01:20 INFO  : 'ps7_post_config' command is executed.
+09:01:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:01:20 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:01:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:01:20 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:01:20 INFO  : 'configparams force-mem-access 0' command is executed.
+09:01:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:01:20 INFO  : Memory regions updated for context APU
+09:01:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:01:20 INFO  : 'con' command is executed.
+09:01:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+09:01:20 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_hello.elf_on_local.tcl'
+09:01:38 INFO  : Disconnected from the channel tcfchan#11.
+09:01:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+09:01:40 INFO  : 'fpga -state' command is executed.
+09:01:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:01:40 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+09:01:40 INFO  : 'jtag frequency' command is executed.
+09:01:40 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:01:40 INFO  : Context for 'APU' is selected.
+09:01:40 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+09:01:40 INFO  : 'configparams force-mem-access 1' command is executed.
+09:01:40 INFO  : Context for 'APU' is selected.
+09:01:40 INFO  : 'stop' command is executed.
+09:01:41 INFO  : 'ps7_init' command is executed.
+09:01:41 INFO  : 'ps7_post_config' command is executed.
+09:01:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:01:41 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:01:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:01:41 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:01:41 INFO  : 'configparams force-mem-access 0' command is executed.
+09:01:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Debug/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:01:41 INFO  : Memory regions updated for context APU
+09:01:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:01:42 INFO  : 'con' command is executed.
+09:01:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+09:01:42 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_hello.elf_on_local.tcl'
+09:03:04 INFO  : Disconnected from the channel tcfchan#12.
+09:03:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+09:03:05 INFO  : 'fpga -state' command is executed.
+09:03:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:03:05 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+09:03:05 INFO  : 'jtag frequency' command is executed.
+09:03:05 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:03:05 INFO  : Context for 'APU' is selected.
+09:03:05 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+09:03:05 INFO  : 'configparams force-mem-access 1' command is executed.
+09:03:05 INFO  : Context for 'APU' is selected.
+09:03:05 INFO  : 'stop' command is executed.
+09:03:06 INFO  : 'ps7_init' command is executed.
+09:03:06 INFO  : 'ps7_post_config' command is executed.
+09:03:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:03:07 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:03:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:03:07 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:03:07 INFO  : 'configparams force-mem-access 0' command is executed.
+09:03:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:03:07 INFO  : Memory regions updated for context APU
+09:03:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:03:07 INFO  : 'con' command is executed.
+09:03:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+09:03:07 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_release_hello.elf_on_local.tcl'
+09:05:35 INFO  : Disconnected from the channel tcfchan#13.
+09:05:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+09:05:37 INFO  : 'fpga -state' command is executed.
+09:05:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:05:37 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+09:05:37 INFO  : 'jtag frequency' command is executed.
+09:05:37 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:05:37 INFO  : Context for 'APU' is selected.
+09:05:37 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+09:05:37 INFO  : 'configparams force-mem-access 1' command is executed.
+09:05:37 INFO  : Context for 'APU' is selected.
+09:05:37 INFO  : 'stop' command is executed.
+09:05:38 INFO  : 'ps7_init' command is executed.
+09:05:38 INFO  : 'ps7_post_config' command is executed.
+09:05:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:05:38 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:05:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:05:38 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:05:38 INFO  : 'configparams force-mem-access 0' command is executed.
+09:05:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:05:38 INFO  : Memory regions updated for context APU
+09:05:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:05:38 INFO  : 'con' command is executed.
+09:05:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+09:05:38 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_release_hello.elf_on_local.tcl'
+03:51:19 WARN  : channel "tcfchan#14" closed
+03:51:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+03:51:58 INFO  : 'fpga -state' command is executed.
+03:51:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:51:58 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+03:51:58 INFO  : 'jtag frequency' command is executed.
+03:51:58 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:51:58 INFO  : Context for 'APU' is selected.
+03:51:58 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+03:51:58 INFO  : 'configparams force-mem-access 1' command is executed.
+03:51:58 INFO  : Context for 'APU' is selected.
+03:51:58 INFO  : 'stop' command is executed.
+03:51:59 INFO  : 'ps7_init' command is executed.
+03:51:59 INFO  : 'ps7_post_config' command is executed.
+03:51:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:51:59 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+03:51:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:51:59 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:51:59 INFO  : 'configparams force-mem-access 0' command is executed.
+03:51:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+03:51:59 INFO  : Memory regions updated for context APU
+03:51:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:51:59 INFO  : 'con' command is executed.
+03:51:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+03:51:59 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_release_hello.elf_on_local.tcl'
+03:53:14 INFO  : Disconnected from the channel tcfchan#15.
+03:53:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+03:53:15 INFO  : 'fpga -state' command is executed.
+03:53:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:53:15 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+03:53:15 INFO  : 'jtag frequency' command is executed.
+03:53:15 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:53:15 INFO  : Context for 'APU' is selected.
+03:53:15 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+03:53:15 INFO  : 'configparams force-mem-access 1' command is executed.
+03:53:15 INFO  : Context for 'APU' is selected.
+03:53:15 INFO  : 'stop' command is executed.
+03:53:16 INFO  : 'ps7_init' command is executed.
+03:53:16 INFO  : 'ps7_post_config' command is executed.
+03:53:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:53:16 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+03:53:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:53:17 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:53:17 INFO  : 'configparams force-mem-access 0' command is executed.
+03:53:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+03:53:17 INFO  : Memory regions updated for context APU
+03:53:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:53:17 INFO  : 'con' command is executed.
+03:53:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+03:53:17 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_release_hello.elf_on_local.tcl'
+04:00:07 INFO  : Disconnected from the channel tcfchan#16.
+04:00:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+04:00:09 INFO  : 'fpga -state' command is executed.
+04:00:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:00:09 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+04:00:09 INFO  : 'jtag frequency' command is executed.
+04:00:09 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:00:09 INFO  : Context for 'APU' is selected.
+04:00:09 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+04:00:09 INFO  : 'configparams force-mem-access 1' command is executed.
+04:00:09 INFO  : Context for 'APU' is selected.
+04:00:09 INFO  : 'stop' command is executed.
+04:00:10 INFO  : 'ps7_init' command is executed.
+04:00:10 INFO  : 'ps7_post_config' command is executed.
+04:00:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:00:10 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:00:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:00:10 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:00:10 INFO  : 'configparams force-mem-access 0' command is executed.
+04:00:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+04:00:10 INFO  : Memory regions updated for context APU
+04:00:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:00:10 INFO  : 'con' command is executed.
+04:00:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+04:00:10 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_release_hello.elf_on_local.tcl'
+04:00:52 INFO  : Disconnected from the channel tcfchan#17.
+04:00:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+04:00:54 INFO  : 'fpga -state' command is executed.
+04:00:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:00:54 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+04:00:54 INFO  : 'jtag frequency' command is executed.
+04:00:54 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:00:54 INFO  : Context for 'APU' is selected.
+04:00:54 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+04:00:54 INFO  : 'configparams force-mem-access 1' command is executed.
+04:00:54 INFO  : Context for 'APU' is selected.
+04:00:54 INFO  : 'stop' command is executed.
+04:00:55 INFO  : 'ps7_init' command is executed.
+04:00:55 INFO  : 'ps7_post_config' command is executed.
+04:00:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:00:55 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:00:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:00:55 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:00:55 INFO  : 'configparams force-mem-access 0' command is executed.
+04:00:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+04:00:55 INFO  : Memory regions updated for context APU
+04:00:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:00:56 INFO  : 'con' command is executed.
+04:00:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+04:00:56 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_release_hello.elf_on_local.tcl'
+04:02:05 INFO  : Disconnected from the channel tcfchan#18.
+04:02:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+04:02:06 INFO  : 'fpga -state' command is executed.
+04:02:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:02:06 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+04:02:06 INFO  : 'jtag frequency' command is executed.
+04:02:06 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:02:06 INFO  : Context for 'APU' is selected.
+04:02:06 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+04:02:06 INFO  : 'configparams force-mem-access 1' command is executed.
+04:02:06 INFO  : Context for 'APU' is selected.
+04:02:06 INFO  : 'stop' command is executed.
+04:02:07 INFO  : 'ps7_init' command is executed.
+04:02:07 INFO  : 'ps7_post_config' command is executed.
+04:02:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:02:07 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:02:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:02:08 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:02:08 INFO  : 'configparams force-mem-access 0' command is executed.
+04:02:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+04:02:08 INFO  : Memory regions updated for context APU
+04:02:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:02:08 INFO  : 'con' command is executed.
+04:02:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+04:02:08 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_release_hello.elf_on_local.tcl'
+04:03:13 INFO  : Disconnected from the channel tcfchan#19.
+04:03:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+04:03:14 INFO  : 'fpga -state' command is executed.
+04:03:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:03:14 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+04:03:14 INFO  : 'jtag frequency' command is executed.
+04:03:14 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:03:14 INFO  : Context for 'APU' is selected.
+04:03:14 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+04:03:14 INFO  : 'configparams force-mem-access 1' command is executed.
+04:03:14 INFO  : Context for 'APU' is selected.
+04:03:14 INFO  : 'stop' command is executed.
+04:03:15 INFO  : 'ps7_init' command is executed.
+04:03:15 INFO  : 'ps7_post_config' command is executed.
+04:03:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:03:15 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:03:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:03:16 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:03:16 INFO  : 'configparams force-mem-access 0' command is executed.
+04:03:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+04:03:16 INFO  : Memory regions updated for context APU
+04:03:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:03:16 INFO  : 'con' command is executed.
+04:03:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+04:03:16 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_release_hello.elf_on_local.tcl'
+04:03:52 INFO  : Disconnected from the channel tcfchan#20.
+04:03:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+04:03:53 INFO  : 'fpga -state' command is executed.
+04:03:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:03:54 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+04:03:54 INFO  : 'jtag frequency' command is executed.
+04:03:54 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:03:54 INFO  : Context for 'APU' is selected.
+04:03:54 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+04:03:54 INFO  : 'configparams force-mem-access 1' command is executed.
+04:03:54 INFO  : Context for 'APU' is selected.
+04:03:54 INFO  : 'stop' command is executed.
+04:03:55 INFO  : 'ps7_init' command is executed.
+04:03:55 INFO  : 'ps7_post_config' command is executed.
+04:03:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:03:55 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:03:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:03:55 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:03:55 INFO  : 'configparams force-mem-access 0' command is executed.
+04:03:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+04:03:55 INFO  : Memory regions updated for context APU
+04:03:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:03:55 INFO  : 'con' command is executed.
+04:03:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+04:03:55 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_release_hello.elf_on_local.tcl'
+04:04:41 INFO  : Disconnected from the channel tcfchan#21.
+04:04:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+04:04:43 INFO  : 'fpga -state' command is executed.
+04:04:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:04:43 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+04:04:43 INFO  : 'jtag frequency' command is executed.
+04:04:43 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:04:43 INFO  : Context for 'APU' is selected.
+04:04:43 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+04:04:43 INFO  : 'configparams force-mem-access 1' command is executed.
+04:04:43 INFO  : Context for 'APU' is selected.
+04:04:43 INFO  : 'stop' command is executed.
+04:04:44 INFO  : 'ps7_init' command is executed.
+04:04:44 INFO  : 'ps7_post_config' command is executed.
+04:04:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:04:44 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:04:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:04:44 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:04:44 INFO  : 'configparams force-mem-access 0' command is executed.
+04:04:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+04:04:44 INFO  : Memory regions updated for context APU
+04:04:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:04:44 INFO  : 'con' command is executed.
+04:04:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+04:04:44 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_release_hello.elf_on_local.tcl'
+04:06:28 INFO  : Disconnected from the channel tcfchan#22.
+04:06:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+04:06:29 INFO  : 'fpga -state' command is executed.
+04:06:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:06:29 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+04:06:29 INFO  : 'jtag frequency' command is executed.
+04:06:29 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:06:29 INFO  : Context for 'APU' is selected.
+04:06:29 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+04:06:29 INFO  : 'configparams force-mem-access 1' command is executed.
+04:06:29 INFO  : Context for 'APU' is selected.
+04:06:29 INFO  : 'stop' command is executed.
+04:06:30 INFO  : 'ps7_init' command is executed.
+04:06:30 INFO  : 'ps7_post_config' command is executed.
+04:06:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:06:30 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:06:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:06:31 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:06:31 INFO  : 'configparams force-mem-access 0' command is executed.
+04:06:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+04:06:31 INFO  : Memory regions updated for context APU
+04:06:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:06:31 INFO  : 'con' command is executed.
+04:06:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+04:06:31 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_release_hello.elf_on_local.tcl'
+20:10:31 INFO  : Disconnected from the channel tcfchan#23.
+20:10:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+20:10:33 INFO  : 'fpga -state' command is executed.
+20:10:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:10:33 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+20:10:33 INFO  : 'jtag frequency' command is executed.
+20:10:33 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:10:33 INFO  : Context for 'APU' is selected.
+20:10:33 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+20:10:33 INFO  : 'configparams force-mem-access 1' command is executed.
+20:10:33 INFO  : Context for 'APU' is selected.
+20:10:33 INFO  : 'stop' command is executed.
+20:10:34 INFO  : 'ps7_init' command is executed.
+20:10:34 INFO  : 'ps7_post_config' command is executed.
+20:10:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:10:34 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:10:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:10:34 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:10:34 INFO  : 'configparams force-mem-access 0' command is executed.
+20:10:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:10:34 INFO  : Memory regions updated for context APU
+20:10:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:10:35 INFO  : 'con' command is executed.
+20:10:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+20:10:35 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_release_hello.elf_on_local.tcl'
+20:11:34 INFO  : Disconnected from the channel tcfchan#24.
+20:11:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+20:11:35 INFO  : 'fpga -state' command is executed.
+20:11:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:11:36 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+20:11:36 INFO  : 'jtag frequency' command is executed.
+20:11:36 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:11:36 INFO  : Context for 'APU' is selected.
+20:11:36 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+20:11:36 INFO  : 'configparams force-mem-access 1' command is executed.
+20:11:36 INFO  : Context for 'APU' is selected.
+20:11:36 INFO  : 'stop' command is executed.
+20:11:37 INFO  : 'ps7_init' command is executed.
+20:11:37 INFO  : 'ps7_post_config' command is executed.
+20:11:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:11:37 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:11:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:11:37 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:11:37 INFO  : 'configparams force-mem-access 0' command is executed.
+20:11:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:11:37 INFO  : Memory regions updated for context APU
+20:11:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:11:37 INFO  : 'con' command is executed.
+20:11:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+20:11:37 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_release_hello.elf_on_local.tcl'
+20:14:27 INFO  : Disconnected from the channel tcfchan#25.
+20:14:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+20:14:28 INFO  : 'fpga -state' command is executed.
+20:14:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:14:29 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+20:14:29 INFO  : 'jtag frequency' command is executed.
+20:14:29 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:14:29 INFO  : Context for 'APU' is selected.
+20:14:29 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+20:14:29 INFO  : 'configparams force-mem-access 1' command is executed.
+20:14:29 INFO  : Context for 'APU' is selected.
+20:14:29 INFO  : 'stop' command is executed.
+20:14:30 INFO  : 'ps7_init' command is executed.
+20:14:30 INFO  : 'ps7_post_config' command is executed.
+20:14:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:14:30 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:14:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:14:30 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:14:30 INFO  : 'configparams force-mem-access 0' command is executed.
+20:14:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:14:30 INFO  : Memory regions updated for context APU
+20:14:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:14:30 INFO  : 'con' command is executed.
+20:14:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+20:14:30 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_release_hello.elf_on_local.tcl'
+20:14:40 INFO  : Disconnected from the channel tcfchan#26.
+20:14:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+20:14:41 INFO  : 'fpga -state' command is executed.
+20:14:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:14:42 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+20:14:42 INFO  : 'jtag frequency' command is executed.
+20:14:42 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:14:42 INFO  : Context for 'APU' is selected.
+20:14:42 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+20:14:42 INFO  : 'configparams force-mem-access 1' command is executed.
+20:14:42 INFO  : Context for 'APU' is selected.
+20:14:42 INFO  : 'stop' command is executed.
+20:14:43 INFO  : 'ps7_init' command is executed.
+20:14:43 INFO  : 'ps7_post_config' command is executed.
+20:14:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:14:43 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:14:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:14:43 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:14:43 INFO  : 'configparams force-mem-access 0' command is executed.
+20:14:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:14:43 INFO  : Memory regions updated for context APU
+20:14:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:14:43 INFO  : 'con' command is executed.
+20:14:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+20:14:43 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_release_hello.elf_on_local.tcl'
+02:16:30 INFO  : Disconnected from the channel tcfchan#27.
+02:16:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+02:16:32 INFO  : 'fpga -state' command is executed.
+02:16:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:16:32 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+02:16:32 INFO  : 'jtag frequency' command is executed.
+02:16:32 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+02:16:32 INFO  : Context for 'APU' is selected.
+02:16:32 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+02:16:32 INFO  : 'configparams force-mem-access 1' command is executed.
+02:16:32 INFO  : Context for 'APU' is selected.
+02:16:32 INFO  : 'stop' command is executed.
+02:16:33 INFO  : 'ps7_init' command is executed.
+02:16:33 INFO  : 'ps7_post_config' command is executed.
+02:16:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:16:33 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:16:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:16:33 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:16:33 INFO  : 'configparams force-mem-access 0' command is executed.
+02:16:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:16:33 INFO  : Memory regions updated for context APU
+02:16:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:16:33 INFO  : 'con' command is executed.
+02:16:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+02:16:33 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_release_hello.elf_on_local.tcl'
+02:17:05 INFO  : Disconnected from the channel tcfchan#28.
+02:17:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+02:17:06 INFO  : 'fpga -state' command is executed.
+02:17:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:17:06 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+02:17:06 INFO  : 'jtag frequency' command is executed.
+02:17:06 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+02:17:07 INFO  : Context for 'APU' is selected.
+02:17:07 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+02:17:07 INFO  : 'configparams force-mem-access 1' command is executed.
+02:17:07 INFO  : Context for 'APU' is selected.
+02:17:07 INFO  : 'stop' command is executed.
+02:17:08 INFO  : 'ps7_init' command is executed.
+02:17:08 INFO  : 'ps7_post_config' command is executed.
+02:17:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:17:08 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:17:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:17:08 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:17:08 INFO  : 'configparams force-mem-access 0' command is executed.
+02:17:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:17:08 INFO  : Memory regions updated for context APU
+02:17:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:17:08 INFO  : 'con' command is executed.
+02:17:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+02:17:08 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_release_hello.elf_on_local.tcl'
+02:17:49 INFO  : Disconnected from the channel tcfchan#29.
+02:17:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+02:17:50 INFO  : 'fpga -state' command is executed.
+02:17:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:17:50 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+02:17:50 INFO  : 'jtag frequency' command is executed.
+02:17:50 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+02:17:50 INFO  : Context for 'APU' is selected.
+02:17:50 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+02:17:50 INFO  : 'configparams force-mem-access 1' command is executed.
+02:17:50 INFO  : Context for 'APU' is selected.
+02:17:50 INFO  : 'stop' command is executed.
+02:17:51 INFO  : 'ps7_init' command is executed.
+02:17:51 INFO  : 'ps7_post_config' command is executed.
+02:17:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:17:51 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:17:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:17:52 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:17:52 INFO  : 'configparams force-mem-access 0' command is executed.
+02:17:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:17:52 INFO  : Memory regions updated for context APU
+02:17:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:17:52 INFO  : 'con' command is executed.
+02:17:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+02:17:52 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_release_hello.elf_on_local.tcl'
+02:27:06 INFO  : Disconnected from the channel tcfchan#30.
+02:27:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279787070A" && level==0} -index 1' command is executed.
+02:27:07 INFO  : 'fpga -state' command is executed.
+02:27:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:27:07 INFO  : Jtag cable 'Digilent Zybo 210279787070A' is selected.
+02:27:07 INFO  : 'jtag frequency' command is executed.
+02:27:07 INFO  : Sourcing of '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+02:27:07 INFO  : Context for 'APU' is selected.
+02:27:07 INFO  : Hardware design information is loaded from '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+02:27:07 INFO  : 'configparams force-mem-access 1' command is executed.
+02:27:07 INFO  : Context for 'APU' is selected.
+02:27:07 INFO  : 'stop' command is executed.
+02:27:08 INFO  : 'ps7_init' command is executed.
+02:27:08 INFO  : 'ps7_post_config' command is executed.
+02:27:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:27:08 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:27:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:27:09 INFO  : The application '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:27:09 INFO  : 'configparams force-mem-access 0' command is executed.
+02:27:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+loadhw -hw /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+dow /home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/hello/Release/hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:27:09 INFO  : Memory regions updated for context APU
+02:27:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:27:09 INFO  : 'con' command is executed.
+02:27:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279787070A"} -index 0
+con
+----------------End of Script----------------
+
+02:27:09 INFO  : Launch script is exported to file '/home/hbucher/tests/xilinx/zybo_hls_maxi_test/zybo_hls_maxi_test.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_release_hello.elf_on_local.tcl'
+02:48:07 INFO  : Disconnected from the channel tcfchan#31.
+02:48:10 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

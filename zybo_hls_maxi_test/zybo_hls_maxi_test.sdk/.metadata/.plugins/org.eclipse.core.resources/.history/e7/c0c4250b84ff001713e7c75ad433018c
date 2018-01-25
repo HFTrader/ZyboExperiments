@@ -1,0 +1,95 @@
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include <xscugic.h>
+#include "xtop.h"
+#include <stdint.h>
+#include <xtime_l.h>
+#include <xil_cache.h>
+
+u64 tic()
+{
+	u32 high = Xil_In32(GLOBAL_TMR_BASEADDR + GTIMER_COUNTER_UPPER_OFFSET);
+	u32 low = Xil_In32(GLOBAL_TMR_BASEADDR + GTIMER_COUNTER_LOWER_OFFSET);
+	return (((u64) high) << 32U) | (u64) low;
+}
+
+XScuGic intcontrol;
+XTop xtop;
+uint32_t values[1024];
+
+
+void InterruptHandler(void *data )
+{
+	//xil_printf(" Interrupt acknowledged \n \r ");
+	//Get list of enabled interrupts
+	int enabled_list = XTop_InterruptGetEnabled(&xtop);
+	//Get interrupt status list
+	int status_list = XTop_InterruptGetStatus(&xtop);
+	//Check ap_done created the interrupt
+	if((enabled_list & 1) && (status_list & 1)){
+		//Clear the ap_done interrupt
+		XTop_InterruptClear(&xtop,1);
+	}
+}
+
+int main()
+{
+    init_platform();
+
+    XScuGic_Config *GicConfig;
+    GicConfig = XScuGic_LookupConfig(XPAR_PS7_SCUGIC_0_DEVICE_ID);
+    if (NULL == GicConfig) {
+    	return XST_FAILURE;
+    }
+    int Status = XScuGic_CfgInitialize(&intcontrol, GicConfig,
+    		GicConfig->CpuBaseAddress);
+    if (Status != XST_SUCCESS) {
+    	return XST_FAILURE;
+    }
+
+    Xil_ExceptionInit();
+    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+    		(Xil_ExceptionHandler) XScuGic_InterruptHandler,
+			&intcontrol);
+    Xil_ExceptionEnable();
+
+
+    Status = XScuGic_Connect(&intcontrol,
+    		XPAR_FABRIC_TOP_0_INTERRUPT_INTR,
+			(Xil_ExceptionHandler)InterruptHandler,
+			(void *)&xtop );
+    if (Status != XST_SUCCESS) {
+    	return XST_FAILURE;
+    }
+    XScuGic_Enable(&intcontrol, XPAR_FABRIC_TOP_0_INTERRUPT_INTR);
+
+
+    for ( uint32_t j=0; j<32; ++j ) {
+    	values[j] = 0;
+    }
+    Xil_DCacheFlushRange( (u32)values, 32*sizeof(u32));
+
+    print("\n**********************\n");
+    print("\nHello World\n");
+    XTop_Initialize(&xtop,0);
+    XTop_Set_values(&xtop, (u32)values );
+
+    XTop_InterruptEnable( &xtop, 1 );
+    XTop_InterruptGlobalEnable(&xtop);
+
+    XTime_GetTime
+    XTop_Start(&xtop);
+    while ( XTop_IsDone(&xtop)==0 );
+    print("Finished\n");
+
+    Xil_DCacheInvalidateRange( (u32)values, 32*sizeof(u32));
+    for ( uint32_t j=0; j<32; ++j ) {
+    	xil_printf( "%d ", values[j] );
+    }
+    xil_printf( "\n" );
+
+    cleanup_platform();
+    return 0;
+}

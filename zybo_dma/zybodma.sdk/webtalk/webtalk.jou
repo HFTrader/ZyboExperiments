@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# 
+# Start of session at: Mon Jan 22 06:02:06 2018
+# Process ID: 9386
+# Current directory: /home/hbucher/tests/xilinx/zybodma/zybodma.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/hbucher/tests/xilinx/zybodma/zybodma.sdk/webtalk/webtalk.log
+# Journal file: /home/hbucher/tests/xilinx/zybodma/zybodma.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

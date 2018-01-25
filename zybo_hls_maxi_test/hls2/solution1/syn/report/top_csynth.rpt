@@ -1,0 +1,206 @@
+
+
+================================================================
+== Vivado HLS Report for 'top'
+================================================================
+* Date:           Mon Jan 22 06:00:04 2018
+
+* Version:        2017.4 (Build 2086221 on Fri Dec 15 21:13:33 MST 2017)
+* Project:        hls2
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z010clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.75|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   38|   38|   38|   38|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |   32|   32|         1|          -|          -|    32|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|DSP              |        -|      -|      -|      -|
+|Expression       |        -|      -|      0|     47|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        2|      -|    586|    684|
+|Memory           |        -|      -|      -|      -|
+|Multiplexer      |        -|      -|      -|     95|
+|Register         |        -|      -|     45|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |        2|      0|    631|    826|
++-----------------+---------+-------+-------+-------+
+|Available        |      120|     80|  35200|  17600|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        1|      0|      1|      4|
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    +-----------------+---------------+---------+-------+-----+-----+
+    |     Instance    |     Module    | BRAM_18K| DSP48E|  FF | LUT |
+    +-----------------+---------------+---------+-------+-----+-----+
+    |top_CFG_m_axi_U  |top_CFG_m_axi  |        2|      0|  512|  580|
+    |top_CFG_s_axi_U  |top_CFG_s_axi  |        0|      0|   74|  104|
+    +-----------------+---------------+---------+-------+-----+-----+
+    |Total            |               |        2|      0|  586|  684|
+    +-----------------+---------------+---------+-------+-----+-----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------+----------+-------+---+----+------------+------------+
+    |    Variable Name   | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------+----------+-------+---+----+------------+------------+
+    |j_1_fu_115_p2       |     +    |      0|  0|  15|           6|           1|
+    |ap_block_state3_io  |    and   |      0|  0|   8|           1|           1|
+    |tmp_fu_109_p2       |   icmp   |      0|  0|  11|           6|           7|
+    |tmp_2_fu_127_p2     |    or    |      0|  0|  13|           6|           1|
+    +--------------------+----------+-------+---+----+------------+------------+
+    |Total               |          |      0|  0|  47|          19|          10|
+    +--------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------+----+-----------+-----+-----------+
+    |            Name            | LUT| Input Size| Bits| Total Bits|
+    +----------------------------+----+-----------+-----+-----------+
+    |CFG_blk_n_AW                |   9|          2|    1|          2|
+    |CFG_blk_n_B                 |   9|          2|    1|          2|
+    |CFG_blk_n_W                 |   9|          2|    1|          2|
+    |ap_NS_fsm                   |  41|          8|    1|          8|
+    |ap_sig_ioackin_CFG_AWREADY  |   9|          2|    1|          2|
+    |ap_sig_ioackin_CFG_WREADY   |   9|          2|    1|          2|
+    |j_reg_78                    |   9|          2|    6|         12|
+    +----------------------------+----+-----------+-----+-----------+
+    |Total                       |  95|         20|   12|         30|
+    +----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------+----+----+-----+-----------+
+    |            Name            | FF | LUT| Bits| Const Bits|
+    +----------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                   |   7|   0|    7|          0|
+    |ap_reg_ioackin_CFG_AWREADY  |   1|   0|    1|          0|
+    |ap_reg_ioackin_CFG_WREADY   |   1|   0|    1|          0|
+    |j_reg_78                    |   6|   0|    6|          0|
+    |values1_reg_138             |  30|   0|   30|          0|
+    +----------------------------+----+----+-----+-----------+
+    |Total                       |  45|   0|   45|          0|
+    +----------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+--------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  | Source Object|    C Type    |
++--------------------+-----+-----+------------+--------------+--------------+
+|s_axi_CFG_AWVALID   |  in |    1|    s_axi   |      CFG     |    scalar    |
+|s_axi_CFG_AWREADY   | out |    1|    s_axi   |      CFG     |    scalar    |
+|s_axi_CFG_AWADDR    |  in |    5|    s_axi   |      CFG     |    scalar    |
+|s_axi_CFG_WVALID    |  in |    1|    s_axi   |      CFG     |    scalar    |
+|s_axi_CFG_WREADY    | out |    1|    s_axi   |      CFG     |    scalar    |
+|s_axi_CFG_WDATA     |  in |   32|    s_axi   |      CFG     |    scalar    |
+|s_axi_CFG_WSTRB     |  in |    4|    s_axi   |      CFG     |    scalar    |
+|s_axi_CFG_ARVALID   |  in |    1|    s_axi   |      CFG     |    scalar    |
+|s_axi_CFG_ARREADY   | out |    1|    s_axi   |      CFG     |    scalar    |
+|s_axi_CFG_ARADDR    |  in |    5|    s_axi   |      CFG     |    scalar    |
+|s_axi_CFG_RVALID    | out |    1|    s_axi   |      CFG     |    scalar    |
+|s_axi_CFG_RREADY    |  in |    1|    s_axi   |      CFG     |    scalar    |
+|s_axi_CFG_RDATA     | out |   32|    s_axi   |      CFG     |    scalar    |
+|s_axi_CFG_RRESP     | out |    2|    s_axi   |      CFG     |    scalar    |
+|s_axi_CFG_BVALID    | out |    1|    s_axi   |      CFG     |    scalar    |
+|s_axi_CFG_BREADY    |  in |    1|    s_axi   |      CFG     |    scalar    |
+|s_axi_CFG_BRESP     | out |    2|    s_axi   |      CFG     |    scalar    |
+|ap_clk              |  in |    1| ap_ctrl_hs |      top     | return value |
+|ap_rst_n            |  in |    1| ap_ctrl_hs |      top     | return value |
+|interrupt           | out |    1| ap_ctrl_hs |      top     | return value |
+|m_axi_CFG_AWVALID   | out |    1|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_AWREADY   |  in |    1|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_AWADDR    | out |   32|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_AWID      | out |    1|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_AWLEN     | out |    8|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_AWSIZE    | out |    3|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_AWBURST   | out |    2|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_AWLOCK    | out |    2|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_AWCACHE   | out |    4|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_AWPROT    | out |    3|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_AWQOS     | out |    4|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_AWREGION  | out |    4|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_AWUSER    | out |    1|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_WVALID    | out |    1|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_WREADY    |  in |    1|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_WDATA     | out |   32|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_WSTRB     | out |    4|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_WLAST     | out |    1|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_WID       | out |    1|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_WUSER     | out |    1|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_ARVALID   | out |    1|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_ARREADY   |  in |    1|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_ARADDR    | out |   32|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_ARID      | out |    1|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_ARLEN     | out |    8|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_ARSIZE    | out |    3|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_ARBURST   | out |    2|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_ARLOCK    | out |    2|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_ARCACHE   | out |    4|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_ARPROT    | out |    3|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_ARQOS     | out |    4|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_ARREGION  | out |    4|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_ARUSER    | out |    1|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_RVALID    |  in |    1|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_RREADY    | out |    1|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_RDATA     |  in |   32|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_RLAST     |  in |    1|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_RID       |  in |    1|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_RUSER     |  in |    1|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_RRESP     |  in |    2|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_BVALID    |  in |    1|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_BREADY    | out |    1|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_BRESP     |  in |    2|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_BID       |  in |    1|    m_axi   |      CFG     |    pointer   |
+|m_axi_CFG_BUSER     |  in |    1|    m_axi   |      CFG     |    pointer   |
++--------------------+-----+-----+------------+--------------+--------------+
+

@@ -1,0 +1,7 @@
+<annotationInfo>
+<item  id="16" filename="hls2/.apc/top.cpp" linenumber="8" name="tmp" contextFuncName="top" moduleName="top" rtlName="tmp_fu_109_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="11" fileDirectory="/home/hbucher/tests/xilinx/zybo_hls_maxi_test"></item>
+<item  id="18" filename="hls2/.apc/top.cpp" linenumber="8" name="j_1" contextFuncName="top" moduleName="top" rtlName="j_1_fu_115_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="15" fileDirectory="/home/hbucher/tests/xilinx/zybo_hls_maxi_test"></item>
+<item  id="21" filename="hls2/.apc/top.cpp" linenumber="9" name="tmp_1" contextFuncName="top" moduleName="top" rtlName="tmp_1_fu_121_p2" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/home/hbucher/tests/xilinx/zybo_hls_maxi_test"></item>
+<item  id="22" filename="hls2/.apc/top.cpp" linenumber="9" name="tmp_2" contextFuncName="top" moduleName="top" rtlName="tmp_2_fu_127_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="13" fileDirectory="/home/hbucher/tests/xilinx/zybo_hls_maxi_test"></item>
+<item  id="23" filename="hls2/.apc/top.cpp" linenumber="9" name="tmp_2_cast" contextFuncName="top" moduleName="top" rtlName="CFG_WDATA" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/home/hbucher/tests/xilinx/zybo_hls_maxi_test"></item>
+</annotationInfo>

@@ -1,0 +1,6 @@
+02:53:05 INFO  : Registering command handlers for SDK TCF services
+02:53:09 INFO  : Launching XSCT server: xsct -n -interactive /home/hbucher/tests/xilinx/zybodma/zybodma.sdk/temp_xsdb_launch_script.tcl
+02:53:12 INFO  : XSCT server has started successfully.
+02:53:12 INFO  : Successfully done setting XSCT server connection channel  
+02:53:12 INFO  : Successfully done setting SDK workspace  
+02:53:12 INFO  : Processing command line option -hwspec /home/hbucher/tests/xilinx/zybodma/zybodma.sdk/design_1_wrapper.hdf.

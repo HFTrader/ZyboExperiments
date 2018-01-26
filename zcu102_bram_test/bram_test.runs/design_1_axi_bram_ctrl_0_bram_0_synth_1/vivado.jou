@@ -2,11 +2,11 @@
 # Vivado v2017.2.1 (64-bit)
 # SW Build 1957588 on Wed Aug  9 16:32:24 MDT 2017
 # IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
-# Start of session at: Fri Sep 29 11:52:57 2017
-# Process ID: 7292
-# Current directory: M:/Work/Vivado/zcu102/bram_test/bram_test.runs/design_1_axi_bram_ctrl_0_bram_0_synth_1
+# Start of session at: Sat Sep 30 01:46:31 2017
+# Process ID: 7832
+# Current directory: M:/Work/Github/ZyboExperiments.git/trunk/zcu102_bram_test/bram_test.runs/design_1_axi_bram_ctrl_0_bram_0_synth_1
 # Command line: vivado.exe -log design_1_axi_bram_ctrl_0_bram_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_bram_ctrl_0_bram_0.tcl
-# Log file: M:/Work/Vivado/zcu102/bram_test/bram_test.runs/design_1_axi_bram_ctrl_0_bram_0_synth_1/design_1_axi_bram_ctrl_0_bram_0.vds
-# Journal file: M:/Work/Vivado/zcu102/bram_test/bram_test.runs/design_1_axi_bram_ctrl_0_bram_0_synth_1\vivado.jou
+# Log file: M:/Work/Github/ZyboExperiments.git/trunk/zcu102_bram_test/bram_test.runs/design_1_axi_bram_ctrl_0_bram_0_synth_1/design_1_axi_bram_ctrl_0_bram_0.vds
+# Journal file: M:/Work/Github/ZyboExperiments.git/trunk/zcu102_bram_test/bram_test.runs/design_1_axi_bram_ctrl_0_bram_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_1_axi_bram_ctrl_0_bram_0.tcl -notrace

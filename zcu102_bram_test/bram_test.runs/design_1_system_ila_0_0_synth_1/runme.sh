@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='M:/Work/Vivado/zcu102/bram_test/bram_test.runs/design_1_system_ila_0_0_synth_1'
+HD_PWD='M:/Work/Github/ZyboExperiments.git/trunk/zcu102_bram_test/bram_test.runs/design_1_system_ila_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
